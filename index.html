@@ -7,34 +7,51 @@
   <style>
     body {
       margin: 0;
+      padding: 0;
       font-family: Arial, sans-serif;
-      background: #f9f9f9;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      background: #f2f2f2;
+      text-align: center;
     }
     .canva-embed {
       position: relative;
       width: 100%;
-      max-width: 1200px;
       height: 0;
       padding-top: 56.2225%;
       box-shadow: 0 2px 8px rgba(63, 69, 81, 0.16);
-      margin-top: 2em;
+      margin: 2em auto;
+      max-width: 1200px;
       border-radius: 8px;
       overflow: hidden;
     }
     .canva-embed iframe {
       position: absolute;
-      width: 100%;
-      height: 100%;
       top: 0;
       left: 0;
+      width: 100%;
+      height: 100%;
       border: none;
     }
+    .button-container {
+      margin: 1.5em;
+    }
+    .welcome-button {
+      background-color: #00c853;
+      color: white;
+      padding: 0.8em 1.6em;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+    }
+    .welcome-button:hover {
+      background-color: #00b248;
+    }
     .credit {
-      margin-top: 1em;
       font-size: 0.9em;
+      margin-bottom: 2em;
     }
     .credit a {
       color: #007acc;
@@ -43,23 +60,6 @@
     .credit a:hover {
       text-decoration: underline;
     }
-    .button-container {
-      margin: 2em 0;
-    }
-    .welcome-button {
-      background-color: #00c853;
-      color: white;
-      padding: 0.8em 1.5em;
-      font-size: 1rem;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      text-decoration: none;
-      transition: background-color 0.3s ease;
-    }
-    .welcome-button:hover {
-      background-color: #00b248;
-    }
   </style>
 </head>
 <body>
@@ -67,12 +67,12 @@
   <div class="canva-embed">
     <iframe loading="lazy"
       src="https://www.canva.com/design/DAGmDlPtIiY/FS3TAV7HNAMvy8mGve-FbQ/watch?embed"
-      allowfullscreen="allowfullscreen" allow="fullscreen">
+      allowfullscreen allow="fullscreen">
     </iframe>
   </div>
 
   <div class="button-container">
-    <a href="https://your-link-here.com" target="_blank" class="welcome-button">Explore More</a>
+    <a href="https://your-link.com" class="welcome-button" target="_blank">Explore More</a>
   </div>
 
   <div class="credit">
