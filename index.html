@@ -10,37 +10,47 @@
       padding: 0;
       box-sizing: border-box;
     }
-    body, html {
+    html, body {
       height: 100%;
+      width: 100%;
       font-family: Arial, sans-serif;
     }
     .background {
-      background-image: url('Bg.png'); /* Replace with your image URL */
-      background-size: cover;
-      background-position: center;
-      height: 100vh;
-      width: 100%;
       position: relative;
+      height: 100vh;
+      width: 100vw;
+      background: url('Bg.png') no-repeat center center fixed;
+      background-size: cover;
     }
     .button-container {
       position: absolute;
       top: 30px;
       left: 50%;
       transform: translateX(-50%);
-      backdrop-filter: blur(10px);
-      background: rgba(255, 255, 255, 0.2);
+      background: rgba(0, 0, 0, 0.5); /* black with transparency */
+      backdrop-filter: blur(8px);
       padding: 0.8em 1.6em;
       border-radius: 12px;
     }
     .access-button {
       text-decoration: none;
-      color: white;
-      font-size: 1rem;
+      color: #fff;
+      font-size: 1.1rem;
       font-weight: bold;
-      background: transparent;
       border: none;
+      background: transparent;
       cursor: pointer;
       letter-spacing: 1px;
+    }
+
+    @media (max-width: 600px) {
+      .button-container {
+        top: 20px;
+        padding: 0.6em 1.2em;
+      }
+      .access-button {
+        font-size: 1rem;
+      }
     }
   </style>
 </head>
