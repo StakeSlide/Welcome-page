@@ -3,49 +3,54 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Welcome | Mohan Bhosale</title>
+  <title>Welcome</title>
   <style>
-    body {
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+    }
+    body, html {
+      height: 100%;
       font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+    }
+    .background {
+      background-image: url('bg.png'); /* Replace with your image URL */
+      background-size: cover;
+      background-position: center;
       height: 100vh;
-      text-align: center;
+      width: 100%;
+      position: relative;
     }
-    h1 {
-      font-size: 2em;
-      color: #333;
-      margin-bottom: 1em;
-    }
-    .welcome-button {
-      background-color: #00c853;
-      color: white;
+    .button-container {
+      position: absolute;
+      top: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      backdrop-filter: blur(10px);
+      background: rgba(255, 255, 255, 0.2);
       padding: 0.8em 1.6em;
-      font-size: 1rem;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      text-decoration: none;
-      transition: background-color 0.3s ease;
+      border-radius: 12px;
     }
-    .welcome-button:hover {
-      background-color: #00b248;
+    .access-button {
+      text-decoration: none;
+      color: white;
+      font-size: 1rem;
+      font-weight: bold;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      letter-spacing: 1px;
     }
   </style>
 </head>
 <body>
 
-  <h1>Welcome to My Website</h1>
-  <a href="https://www.canva.com/design/DAGmDlPtIiY/HX43vOT1968WSIsp9DxsQw/view?utm_content=DAGmDlPtIiY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h77d41a29ff"
-     target="_blank"
-     class="welcome-button">
-    View My Design
-  </a>
+  <div class="background">
+    <div class="button-container">
+      <a href="#" class="access-button">ACCESS THE TRICK</a>
+    </div>
+  </div>
 
 </body>
 </html>
